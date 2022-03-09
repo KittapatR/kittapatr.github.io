@@ -29,27 +29,116 @@
         font-family: "Computer Modern Concrete", sans-serif;
         font-size: 14pt;
     }
+	.button {
+  		background-color: #FFF;
+  		border: none;
+  		color: black;
+  		padding: 5px 10px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		margin: 4px 2px;
+  		cursor: pointer;
+	}
     </style>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-
-    <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-
-    <!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
 
 </head>
 <body>
-    <div style='color:white; z-index: 1; position:absolute; padding: 100pt; padding-top: 150pt; width: 550pt; background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.80) 10%, rgba(0,0,0,0) 100%);'>
+    <div style='color:white; z-index: 1; position:absolute; padding: 100pt; padding-top: 100pt; width: 700pt; background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.80) 20%, rgba(0,0,0,0) 100%);'>
         <h1>Kittapat<br> Ratanaphupha</h1><br>
-        <h2><b>Current status</b> undergraduate student,<br>
-        Health Data Science Curriculum,<br>
-        King Mongkut's University of Technology Thonburi,<br>
-        Bangkok, Thailand</h2>
+	   A mathematics enthusiast, especially in geometric analysis.<br>
+	   Interested topics: Archaeology, Historiography, Logic/set/model/proof theories<br>
+	   Github: <a href="https://github.com/KittapatR">Here it is!</a>, E-mail: kittapat.rat@mail.kmutt.ac.th<br><br>
+	   <h2><a style="color:white; font-size: 30pt" href="CV_Redacted.pdf">Curriculum Vitae</a></h2><br>
+	   <b>Current status</b><br>
+	   <ul>
+		<li> Undergraduate student at King Mongkut's University of Technology Thonburi, Bangkok, Thailand in BSc Health Data Science</li>
+		<li> Doing some mathematics intensively <button class="button" onclick="myFunction()">Click here to see full description of mathematics courses.</button>
+
+		<div id="math_courses" style="display:none">
+  			<b>Advanced Courses on Mathematics</b><br>
+			2020: Differential Geometry,<br>
+			2021 Semester 1: Elementary Real Analysis, Abstract Algebra, Numerical Analysis, Functional Analysis,<br>
+			2021 Semester 2: Linear Algebra, Differentiable Manifolds, Graduate Algebra, Distribution theory, Mathematical Statistics, Measure Theory (sit-in), Theoretical Computer Science (Self-study on Probabilistic Turing Machine),<br><br>
+			Expected: Algebraic topology, Differential topology, Cohomology, Complex Manifolds, PDE on manifolds.
+		</div></li>
+	   	</ul>
+		<b>What I've learnt about</b>
+		<table style="border:0; width:100%">
+  			<tr>
+   				<th style="width:70%">Topics</th>
+    				<th style="width:20%">Date</th>
+				<th style="width:10%">Resources</th>
+  			</tr>
+			<tr>
+				<td>Mathematical Physics: non-uniqueness property of Hamitonian in one-degree of freedom</td>
+				<td>Feb 2018</td>
+				<td><a href="https://arxiv.org/abs/1802.06370" style="color:white">ArXiv</a>, <a href="Hamiltonian.html" style="color:white">doc</a></td>
+			</tr>
+			<tr>
+				<td>Backtracking algorithm: N-queen problem in general NxN chessboard</td>
+				<td>April 2019</td>
+				<td><a href="https://github.com/KittapatR/n-queen-problem" style="color:white">GitHub</a></td>
+			</tr>
+			<tr>
+				<td>Thai standard curriculum: possibility to do interdisciplinary teaching by investigating it with Natural Language Processing techniques</td>
+				<td>Jan 2020</td>
+				<td><a href="https://github.com/KittapatR/core-standard-curriculum" style="color:white">GitHub</a></td>
+			</tr>
+  			<tr>
+				<td>Hough transformation and Canny Edge Detector: Lane line detection</td>
+				<td>May 2020</td>
+				<td><a href="https://github.com/nutizxcx/lane-line-detection" style="color:white">GitHub</a></td>
+			</tr>
+			<tr>
+    				<td>Application of Pseudo-Riemannian Manifold: General Relativity</td>
+    				<td>Jul 2021</td>
+				<td><a href="DiffGeo.html" style="color:white">Doc</a></td>
+  			</tr>
+			<tr>
+				<td>Implementation of Numerical Methods Algorithms</td>
+				<td>Aug 2021</td>
+				<td><a href="NumericalMethods.html" style="color:white">Doc</a></td>
+			</tr>
+			<tr>
+				<td>Guest Lecturer: Discrete Fourier Transform <br>(I was the lecturer!)</td>
+				<td>Nov 2021</td>
+				<td><a href="DFT and its applications (9 Nov 2021).pdf" style="color:white">Presentation</a></td>
+			</tr>
+			<tr>
+				<td>Boundary Value Problem: Numerical Methods on Heat Transfer</td>
+				<td>Dec 2021</td>
+				<td><a href="NumericalMethods2.html" style="color:white">Doc</a></td>
+			</tr>
+			<tr>
+				<td>Plant Systems Biology: Cassava Metabolic Pathway Analysis</td>
+				<td>Ongoing</td>
+				<td><a href="https://www.youtube.com/watch?v=g7V8YXXBY3o" style="color:white">YouTube</a></td>
+			</tr>
+		</table><br>
+		<b>Things that I want to do also</b>
+		<ul>
+			<li>Graphic design</li>
+			<li>Typography as font foundry</li>
+			<li>Data analysis</li>
+			<li>Political science, humanities, political philosophy</li>
+			<li>Interested topics that I mentioned above</li>
+		</ul><br>
+		* This image was taken by my beloved advisor, Sikarin Yoo-Kong, in 2018 at <a href="https://www.facebook.com/tcpbangmod">TCP KMUTT</a> lab.<br>
+		** The documents are mostly from LaTeX which are converted as html via <a href="https://github.com/coolwanglu/pdf2htmlEX">pdf2htmlEX</a>.
     </div>
-    <img src='cover.jpg' alt='cover' style='object-fit: cover; width: 100%; height: 100vh; object-position: 0 15%; z-index: 0;'>
+    <img src='cover.jpg' alt='cover' style='position: fixed; object-fit: cover; width: 100%; height: 100vh; object-position: 0 15%; z-index: 0;'>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("math_courses");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
