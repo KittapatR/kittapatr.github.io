@@ -1,144 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KittapatR</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KittapatR</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 
-    <link rel='stylesheet' href='font.css'>
-    <link rel="stylesheet" type="text/css"
-    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-    <style>
-    body {
-        font-family: "Computer Modern Sans", sans-serif;
-        font-size: 14pt;
-    }
-    h1{
-        font-size: 75pt;
-        line-height: 1;
-    }
-    h2 {
-        font-family: "Computer Modern Concrete", sans-serif;
-        font-size: 14pt;
-    }
-	.button {
-  		background-color: #FFF;
-  		border: none;
-  		color: black;
-  		padding: 5px 10px;
-  		text-align: center;
-  		text-decoration: none;
-  		display: inline-block;
-  		margin: 4px 2px;
-  		cursor: pointer;
-	}
-    </style>
+	<link rel='stylesheet' href='font.css'>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+	<style>
+		a {
+			color:rgb(63, 196, 11);
+			transition: 0.3s;
+		}
+		
+		body {
+			font-family: "Computer Modern Sans", sans-serif;
+			font-size: 14pt;
+		}
+
+		h1 {
+			font-size: 75pt;
+			line-height: 1;
+		}
+
+		h2 {
+			font-family: "Computer Modern Concrete", sans-serif;
+			font-size: 14pt;
+		}
+
+		.button {
+			background-color: rgba(43, 136, 6, 0.799);
+			border: none;
+			border-radius: 5pt;
+			color: white;
+			padding: 5px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			margin: 4px 2px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.button:hover {
+			background-color: rgba(64, 198, 11, 0.799);
+		}
+
+		a:hover {
+			color: rgb(72, 255, 0);
+		}
+
+		a:active {
+			color: rgb(0, 0, 0);
+		}
+
+		::-moz-selection { /* Code for Firefox */
+			color: black;
+			background: rgb(72, 255, 0);
+		}
+
+		::selection {
+			color: black;
+			background: rgb(72, 255, 0);
+		}
+
+		.button:active {
+			background-color: rgba(0, 0, 0, 0.799);
+		}
+
+		body {
+			background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url("cover.jpg");
+			background-attachment: fixed;
+			background-color: black;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+			object-position: 0 15%; 
+			z-index: 0;
+		}
+	</style>
 
 </head>
-<body>
-    <div style='color:white; z-index: 1; position:absolute; padding: 100pt; padding-top: 100pt; width: 700pt; background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.80) 20%, rgba(0,0,0,0) 100%);'>
-        <h1>Kittapat<br> Ratanaphupha</h1><br>
-	   A mathematics enthusiast, especially in geometric analysis.<br>
-	   Interested topics: Archaeology, Historiography, Logic/set/model/proof theories<br>
-	   Github: <a href="https://github.com/KittapatR">Here it is!</a>, E-mail: kittapat.rat@mail.kmutt.ac.th<br><br>
-	   <h2><a style="color:white; font-size: 30pt" href="CV_Redacted.pdf">Curriculum Vitae</a></h2><br>
-	   <b>Current status</b><br>
-	   <ul>
-		<li> Undergraduate student at King Mongkut's University of Technology Thonburi, Bangkok, Thailand in BSc Health Data Science</li>
-		<li> Doing some mathematics intensively <button class="button" onclick="myFunction()">Click here to see full description of mathematics courses.</button>
 
-		<div id="math_courses" style="display:none">
-  			<b>Advanced Courses on Mathematics</b><br>
-			2020: Differential Geometry,<br>
-			2021 Semester 1: Elementary Real Analysis, Abstract Algebra, Numerical Analysis, Functional Analysis,<br>
-			2021 Semester 2: Linear Algebra, Differentiable Manifolds, Graduate Algebra, Distribution theory, Mathematical Statistics, Measure Theory (sit-in), Theoretical Computer Science (Self-study on Probabilistic Turing Machine),<br><br>
-			Expected: Algebraic topology, Differential topology, Cohomology, Complex Manifolds, PDE on manifolds.
-		</div></li>
-	   	</ul>
+<body>
+	<div style='color:white; z-index: 1; position:absolute; padding: 100pt; padding-top: 100pt; width: 700pt; background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.80) 20%, rgba(0,0,0,0) 100%);'>
+		<h1>Kittapat<br> Ratanaphupha</h1><br>
+		A mathematics enthusiast, especially in differential geometry.<br>
+		Github: <a href="https://github.com/KittapatR">Here it is!</a>, E-mail: kittapat.rat@mail.kmutt.ac.th<br><br>
+		<h2><a style="font-size: 30pt" href="CV.pdf">Curriculum Vitae</a></h2><br>
+		<b>Current status</b><br>
+		<ul>
+			<li> Undergraduate student at King Mongkut's University of Technology Thonburi, Bangkok, Thailand in BSc
+				Health Data Science</li>
+			<li> Doing some mathematics intensively <button class="button" onclick="myFunction()">Click here to see full
+					description of mathematics courses.</button>
+
+				<div id="math_courses" style="display:none">
+					<div style= "line-height: 70%;"><br></div>
+					<b>Advanced Courses on Mathematics</b><div style= "line-height: 70%;"><br></div>
+					2020: Differential Geometry,<div style= "line-height: 70%;"><br></div>
+					2021 Semester 1: Elementary Real Analysis, Abstract Algebra, Numerical Analysis, Functional
+					Analysis,<div style= "line-height: 70%;"><br></div>
+					2021 Semester 2:<br>
+					KMUTT: Linear Algebra, Mathematical Statistics, Graduate Algebra, Distribution theory,<br>
+					Chula: Differentiable Manifolds, Measure Theory (sit-in)<div style= "line-height: 100%;"><br></div>
+					Expected in a graduate school: Algebraic topology & geometry, Differential topology, Cohomology theories, Complex Manifolds, PDE on
+					manifolds<div style= "line-height: 150%;"><br></div>
+
+					<a href="https://drive.google.com/drive/folders/1F0ZbECyeL4QPLASZbgN_-rS3lx2OI5vt">Example problem assignments</a>
+					
+					<div style= "line-height: 150%;"><br></div>
+				</div>
+			</li>
+		</ul>
 		<b>What I've learnt about</b>
 		<table style="border:0; width:100%">
-  			<tr>
-   				<th style="width:70%">Topics</th>
-    				<th style="width:20%">Date</th>
+			<tr>
+				<th style="width:70%">Topics</th>
+				<th style="width:20%">Date</th>
 				<th style="width:10%">Resources</th>
-  			</tr>
+			</tr>
 			<tr>
 				<td>Mathematical Physics: non-uniqueness property of Hamitonian in one-degree of freedom</td>
 				<td>Feb 2018</td>
-				<td><a href="https://arxiv.org/abs/1802.06370" style="color:white">ArXiv</a>, <a href="Hamiltonian.html" style="color:white">doc</a></td>
+				<td><a href="https://arxiv.org/abs/1802.06370">ArXiv</a>, <a href="Hamiltonian.html">doc</a></td>
 			</tr>
 			<tr>
 				<td>Backtracking algorithm: N-queen problem in general NxN chessboard</td>
 				<td>April 2019</td>
-				<td><a href="https://github.com/KittapatR/n-queen-problem" style="color:white">GitHub</a></td>
+				<td><a href="https://github.com/KittapatR/n-queen-problem">GitHub</a></td>
 			</tr>
 			<tr>
-				<td>Thai standard curriculum: possibility to do interdisciplinary teaching by investigating it with Natural Language Processing techniques</td>
+				<td>Thai standard curriculum: possibility to do interdisciplinary teaching by investigating it with
+					Natural Language Processing techniques</td>
 				<td>Jan 2020</td>
-				<td><a href="https://github.com/KittapatR/core-standard-curriculum" style="color:white">GitHub</a></td>
+				<td><a href="https://github.com/KittapatR/core-standard-curriculum">GitHub</a></td>
 			</tr>
-  			<tr>
+			<tr>
 				<td>Hough transformation and Canny Edge Detector: Lane line detection</td>
 				<td>May 2020</td>
-				<td><a href="https://github.com/nutizxcx/lane-line-detection" style="color:white">GitHub</a></td>
+				<td><a href="https://github.com/nutizxcx/lane-line-detection">GitHub</a></td>
 			</tr>
 			<tr>
-    				<td>Application of Pseudo-Riemannian Manifold: General Relativity</td>
-    				<td>Jul 2021</td>
-				<td><a href="DiffGeo.html" style="color:white">Doc</a></td>
-  			</tr>
+				<td>Application of Pseudo-Riemannian Manifold: General Relativity</td>
+				<td>Jul 2021</td>
+				<td><a href="DiffGeo.html">Doc</a></td>
+			</tr>
 			<tr>
 				<td>Implementation of Numerical Methods Algorithms</td>
 				<td>Aug 2021</td>
-				<td><a href="NumericalMethods.html" style="color:white">Doc</a></td>
+				<td><a href="NumericalMethods.html">Doc</a></td>
 			</tr>
 			<tr>
 				<td>Guest Lecturer: Discrete Fourier Transform <br>(I was the lecturer!)</td>
 				<td>Nov 2021</td>
-				<td><a href="DFT and its applications (9 Nov 2021).pdf" style="color:white">Presentation</a></td>
+				<td><a href="DFT and its applications (9 Nov 2021).pdf">Presentation</a></td>
 			</tr>
 			<tr>
 				<td>Boundary Value Problem: Numerical Methods on Heat Transfer</td>
 				<td>Dec 2021</td>
-				<td><a href="NumericalMethods2.html" style="color:white">Doc</a></td>
+				<td><a href="NumericalMethods2.html">Doc</a></td>
 			</tr>
 			<tr>
 				<td>Plant Systems Biology: Cassava Metabolic Pathway Analysis</td>
 				<td>Ongoing</td>
-				<td><a href="https://www.youtube.com/watch?v=g7V8YXXBY3o" style="color:white">YouTube</a></td>
+				<td><a href="https://www.youtube.com/watch?v=g7V8YXXBY3o">YouTube</a></td>
 			</tr>
 		</table><br>
-		<b>Things that I want to do also</b>
+		<b>Things that I want to do/learn also</b><br>
+		Mathematics
+		<ul>
+			<li>Logic/set/model/proof theories and philosophy of mathematics</li>
+			<li>Theoretical computer science</li>
+		</ul>
+		Others
 		<ul>
 			<li>Graphic design</li>
 			<li>Typography as font foundry</li>
-			<li>Data analysis</li>
-			<li>Political science, humanities, political philosophy</li>
+			<li>Data science</li>
+			<li>Political science, humanities, political philosophy, archaeology, historiography</li>
 			<li>Interested topics that I mentioned above</li>
 		</ul><br>
-		* This image was taken by my beloved advisor, Sikarin Yoo-Kong, in 2018 at <a href="https://www.facebook.com/tcpbangmod">TCP KMUTT</a> lab.<br>
-		** The documents are mostly from LaTeX which are converted as html via <a href="https://github.com/coolwanglu/pdf2htmlEX">pdf2htmlEX</a>.
-    </div>
-    <img src='cover.jpg' alt='cover' style='position: fixed; object-fit: cover; width: 100%; height: 100vh; object-position: 0 15%; z-index: 0;'>
+		* This image was taken by my beloved advisor, Sikarin Yoo-Kong, in 2018 at <a
+			href="https://www.facebook.com/tcpbangmod">TCP KMUTT</a> lab.<br>
+		** The documents are mostly from LaTeX which are converted as html via <a
+			href="https://github.com/coolwanglu/pdf2htmlEX">pdf2htmlEX</a>.
+	</div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("math_courses");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("math_courses");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
 </body>
+
 </html>
